@@ -8,4 +8,4 @@ Read and write xml files with xml-rs like StaX. [xml-rs git](https://github.com/
 
 ## Sample xmltreesample
 
-Read and write xml files in DOM Mode. [xml-tree-rs git](]https://github.com/eminence/xmltree-rs)
+Read and write xml files in DOM Mode. [xml-tree-rs git](https://github.com/eminence/xmltree-rs)
