@@ -1,3 +1,9 @@
+pub fn sample_xml_tree() {
+    let mut gpx_struct = GpxFile::new();
+    parse_gpx(&mut gpx_struct);
+    write_gpx(&gpx_struct);
+}
+
 use std::fs::File;
 use xmltree::Element;
 use xmltree::XMLNode;
@@ -29,12 +35,6 @@ impl GpxFile {
     pub fn add_point(&mut self, point: GpxPoint) {
         self.points.push(point);
     }
-}
-
-fn main() {
-    let mut gpx_struct = GpxFile::new();
-    parse_gpx(&mut gpx_struct);
-    write_gpx(&gpx_struct);
 }
 
 fn write_gpx(gpx_struct: &GpxFile) {
